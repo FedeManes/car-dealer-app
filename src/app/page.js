@@ -1,4 +1,4 @@
-import Selector from './Selector'
+import Selector from '@/components/Selector/Selector'
 import { FaCar } from 'react-icons/fa6'
 
 async function getVehicles() {

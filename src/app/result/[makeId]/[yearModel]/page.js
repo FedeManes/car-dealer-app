@@ -61,7 +61,10 @@ export default async function Result({ params }) {
       </h1>
       <div className="mt-2 w-auto flex flex-wrap">
         {searchResults?.map((vehicle, index) => (
-          <div className="smaller:w-1/2 sm:w-1/3 md:w-1/4 mx-1 bg-cyan-600 my-1 p-4 rounded-lg">
+          <div
+            key={vehicle.Model_ID}
+            className="smaller:w-1/2 sm:w-1/3 md:w-1/4 mx-1 bg-cyan-600 my-1 p-4 rounded-lg"
+          >
             <ul>
               <li key={`${vehicle.Model_ID}-${yearModel}`}>
                 <span className="flex items-center">
