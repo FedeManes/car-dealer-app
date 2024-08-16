@@ -6,6 +6,10 @@ export const content = [
   './src/app/**/*.{js,ts,jsx,tsx,mdx}',
 ]
 export const theme = {
-  extend: {},
+  extend: {
+    screens: {
+      smaller: '360px',
+    },
+  },
 }
 export const plugins = []

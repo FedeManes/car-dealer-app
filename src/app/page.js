@@ -1,4 +1,5 @@
-import Selector from '../components/Selector/Selector'
+import Selector from './Selector'
+import { FaCar } from 'react-icons/fa6'
 
 async function getVehicles() {
   const res = await fetch(process.env.CAR_DEALER_API, { cache: 'no-store' })
@@ -18,7 +19,12 @@ export default async function Home() {
 
   return (
     <div>
-      <h1 className="text-3xl">Search your car</h1>
+      <h1 className="text-3xl bg-cyan-800 text-gray-200 p-2 rounded-lg">
+        <span className="flex items-center space-x-2">
+          <span>Search your car</span>
+          <FaCar className="w-6 h-6" />
+        </span>
+      </h1>
       <Selector vehicles={vehicles}></Selector>
     </div>
   )

@@ -1,4 +1,4 @@
-import './global.css'
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'Search your car',
@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='m-1'>{children}</body>
     </html>
   )
 }
